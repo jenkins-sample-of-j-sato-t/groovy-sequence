@@ -1,7 +1,7 @@
 def MakeArray(Integer inStart, Integer inEnd)
 {
 	def tempArray = []
-	(InStart..InEnd).each
+	(inStart..inEnd).each
 	{
 		tempArray.push(it)
 	}
