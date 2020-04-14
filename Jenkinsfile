@@ -17,6 +17,13 @@ pipeline{
 				}
 			}
 		}
+		stage("disip array"){
+			steps{
+				script{
+					sequenceScript.DispArray(datas)
+				}
+			}
+		}
 	}
 	post{
 		always{

@@ -9,7 +9,13 @@ def MakeArray(Integer inStart, Integer inEnd)
 	return tempArray
 }
 
-
+void DispArray(def inArray)
+{
+	inArray.each
+	{
+		echo it
+	}
+}
 
 
 
