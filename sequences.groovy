@@ -21,6 +21,19 @@ void DispArray(def inArray)
 	echo datas
 }
 
+Integer SumArray(def inArray)
+{
+	Integer sum = 0
+
+	// 配列でのeachは上でやってるので別の方法でループ
+	Integer size = inArray.size()
+	for(i in 0..<size)
+	{
+		sum += inArray[i]
+	}
+
+	return sum
+}
 
 
 

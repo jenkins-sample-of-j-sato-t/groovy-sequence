@@ -24,6 +24,14 @@ pipeline{
 				}
 			}
 		}
+		stage("sum array"){
+			steps{
+				script{
+					def sum = sequenceScript.SumArray(datas)
+					echo "sum : ${sum}"
+				}
+			}
+		}
 	}
 	post{
 		always{
