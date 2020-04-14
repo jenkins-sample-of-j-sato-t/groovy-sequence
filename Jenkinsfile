@@ -21,7 +21,7 @@ pipeline{
 	post{
 		always{
 			echo "========always========"
-			cleanWS
+			cleanWs notFailBuild: true
 		}
 		success{
 			echo "========pipeline executed successfully ========"
