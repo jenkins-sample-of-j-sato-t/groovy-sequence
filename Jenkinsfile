@@ -1,4 +1,7 @@
 pipeline{
+	parameters{
+		booleanParam(name: "UseDouble", defaultValue: false, description: "配列の各要素を2倍にするか")
+	}
 	agent{
 		label "master"
 	}
@@ -14,6 +17,17 @@ pipeline{
 			steps{
 				script{
 					datas = sequenceScript.MakeArray(1,10)
+				}
+			}
+		}
+		stage("element double array"){
+			steps{
+				script{
+					if(params.UseDouble){
+						datas = sequenceScript.ElementDouble(datas)
+					}else{
+						echo "skip double"
+					}
 				}
 			}
 		}

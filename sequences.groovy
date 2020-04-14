@@ -35,6 +35,18 @@ Integer SumArray(def inArray)
 	return sum
 }
 
+def ElementDouble(def inArray)
+{
+	def outArray = []
+
+	inArray.each
+	{
+		outArray.push(it * 2)
+	}
+
+	return outArray
+}
+
 
 
 return this
