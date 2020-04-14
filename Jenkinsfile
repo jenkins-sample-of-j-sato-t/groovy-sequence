@@ -53,13 +53,14 @@ pipeline{
 			steps{
 				script{
 					map = sequenceScript.MakeMap()
-					echo "made map"
+					sequenceScript.DispMap(map)
 				}
 			}
 		}
-		stage("disp map"){
+		stage("custom map"){
 			steps{
 				script{
+					map = sequenceScript.CustomMap(map)
 					sequenceScript.DispMap(map)
 				}
 			}

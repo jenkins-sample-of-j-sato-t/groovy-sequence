@@ -64,4 +64,14 @@ void DispMap(Map inMap)
 	}
 }
 
+Map CustomMap(Map inMap)
+{
+	Map outMap = inMap
+
+	outMap["dat1"] = 100
+	outMap["datEx"] = 1000
+
+	return outMap
+}
+
 return this
