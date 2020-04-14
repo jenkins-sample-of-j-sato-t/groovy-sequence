@@ -17,7 +17,7 @@ pipeline{
 				}
 			}
 		}
-		stage("disip array"){
+		stage("disp array"){
 			steps{
 				script{
 					sequenceScript.DispArray(datas)
