@@ -57,4 +57,11 @@ def MakeMap()
 	return map
 }
 
+void DispMap(Map inMap)
+{
+	map.each{
+		echo "key=${it.key} , value=${it.value}"
+	}
+}
+
 return this

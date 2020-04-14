@@ -57,6 +57,13 @@ pipeline{
 				}
 			}
 		}
+		stage("disp map"){
+			steps{
+				script{
+					sequenceScript.DispMap(map)
+				}
+			}
+		}
 	}
 	post{
 		always{
