@@ -11,10 +11,14 @@ def MakeArray(Integer inStart, Integer inEnd)
 
 void DispArray(def inArray)
 {
+	String datas = ""
+
 	inArray.each
 	{
-		echo "${it}"
+		datas += "${it}\r\n"
 	}
+
+	echo datas
 }
 
 
