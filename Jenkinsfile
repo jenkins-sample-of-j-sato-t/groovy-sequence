@@ -17,6 +17,7 @@ pipeline{
 			steps{
 				script{
 					datas = sequenceScript.MakeArray(1,10)
+					echo "made array"
 				}
 			}
 		}
@@ -25,6 +26,7 @@ pipeline{
 				script{
 					if(params.UseDouble){
 						datas = sequenceScript.ElementDouble(datas)
+						echo "element is doubled"
 					}else{
 						echo "skip double"
 					}
