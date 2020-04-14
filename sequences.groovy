@@ -13,7 +13,7 @@ void DispArray(def inArray)
 {
 	inArray.each
 	{
-		echo it
+		echo "${it}"
 	}
 }
 
