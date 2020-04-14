@@ -47,6 +47,14 @@ def ElementDouble(def inArray)
 	return outArray
 }
 
-
+def MakeMap()
+{
+	Map map = [
+		dat1: 50,
+		dat2: 20,
+		dat3: 60
+	]
+	return map
+}
 
 return this

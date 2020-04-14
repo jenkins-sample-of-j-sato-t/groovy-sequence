@@ -48,6 +48,15 @@ pipeline{
 				}
 			}
 		}
+
+		stage("make map"){
+			steps{
+				script{
+					map = sequenceScript.MakeMap()
+					echo "made map"
+				}
+			}
+		}
 	}
 	post{
 		always{
